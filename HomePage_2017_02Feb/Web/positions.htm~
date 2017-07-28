@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="Bluefish 2.2.10" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="../jemdoc.css" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".job").click(function(){
+        $("#"+$(this).attr("data-showdiv")).toggle();
+        return false;
+    });
+});
+</script>
+
+
+<title>Open Positions</title>
+
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout" width="1114">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Ali Agha</div>
+<div class="menu-item"><a href="../index.htm">Home</a></div>
+<div class="menu-item"><a href="Research.htm">Research</a></div>
+<div class="menu-item"><a href="publications.htm">Publications</a></div>
+<div class="menu-item"><a href="courses.htm">Courses</a></div>
+<div class="menu-item"><a href="CV-Ali.pdf">CV</a></div>
+<div class="menu-item"><a href="software.htm" class="current">Software</a></div>
+<div class="menu-item"><a href="media.htm">News &amp; Media</a></div>
+<br>
+<div class="menu-item"><a href="positions.htm"><b>Open Positions</b></a></div>
+
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Open Positions</h1>
+</div>
+
+<!--
+<div>
+<p>
+    Paragraph on the style of work
+</p>
+</div>
+-->
+
+<a href="#" class="job" data-showdiv="post-doc">
+<h3><del>Post-doc in motion planning under uncertainty</del></h3>
+</a>
+
+<div id="post-doc" style="display: none;">
+<p>
+The Jet Propulsion Laboratory (JPL) in Pasadena, California has an opening for a post-doc in the area of integrated motion planning under uncertainty and belief space planning, with applications to autonomous navigation of prototype rovers and rotorcrafts on Mars.
+</p>
+
+
+<p>
+The job function includes active participation and contribution to JPL's activities related to robotic autonomy, controls, and computer vision. Activities include: theoretical analysis, software development in C++/ROS/Linux, participation in grant proposal development, and submission of technical papers to conferences/journals.
+</p>
+
+<h4>Background</h4>
+
+<p>
+<ul>
+    <li> Motion Planning Under Uncertainty and Belief Space Planning </li>
+    <li> Optimization and Real-time Trajectory Generation </li>
+    <li> Robot Localization and Mapping </li>
+    <li> Sampling-based Robot Motion Planning Methods </li>
+    <li> Collision Avoidance Algorithms </li>
+    <li> Control Theory </li>
+    <li> Stochastic Differential Equations </li>
+</ul>
+</p>
+
+<h4>Software Skills</h4>
+<p>
+<ul>
+    <li> Demonstrated programming skills in C++/Python </li>
+    <li> Experience with Robot Operating System (ROS) </li>
+    <li> Strong written and verbal communications skills </li>
+</ul>
+</p>
+
+<h4>Apply</h4>
+
+<p>
+Interested candidates should send their resume and date of availability to mobility.applicant@jpl.nasa.gov, <font color="red">with email subject [Post-Doc 2017 Autonomy]</font>.<br>
+</p>
+
+<h4>About JPL</h4>
+
+<p>
+The Jet Propulsion Laboratory (JPL) is NASA’s lead center for robotic exploration of the Solar System. JPL’s core competency is the end-to-end implementation of robotic space missions to study Earth, the Solar System, and the Universe. JPL is part of NASA and California Institute of Technology (Caltech). Find more information on JPL Robotics at <a href="http://www-robotics.jpl.nasa.gov">http://www-robotics.jpl.nasa.gov</a>.
+</p>
+
+<br>
+</div>
+<br>
+
+<a href="#" class="job" data-showdiv="intern-us">
+<h3>Summer 2017 Internship</h3>
+</a>
+
+<div id="intern-us" style="display: none;">
+<p>
+Planning under motion and sensing uncertainty is one of the fundamental problems in robotics. Belief space planning and POMDPs (Partially Observable Markov Decision Processes) are principled frameworks to describe this problem. However, the solution to POMDP in realistic setting with continuous state/action/observation spaces is computationally intractable. Finding approximate solutions to this problem with plausible features is an ongoing research in robotics community.
+</p>
+
+<h4>Project description</h4>
+<p>
+This project is concerned with the problem of planning under motion and sensing uncertainty for robotic applications. In particular, we rely on sampling-based techniques in motion planning to create an anytime solution for this problem. We start with a coarse solution and enhance it over time by further sampling the belief space, and updating the resulting motion plan.
+</p>
+
+<p>
+There are multiple positions with focus on theory or implementation. Please mention in the email your preference (theory or implementation). If you are comfortable with both, you are strongly encouraged to apply.
+</p>
+
+<p>
+The theoretical work in this project will be partially related to the paper on <a href="http://people.lids.mit.edu/aliagha/Web/pubpdfs/2014.Ali.Suman.ea.IJRR_FIRM.pdf">FIRM</a>. The implementation work in this project will be related to <a href="https://github.com/sauravag/edpl-ompl"> OMPL </a>. 
+</p>
+
+<h4>Background</h4>
+
+<p>
+<ul>
+    <li> Motion Planning Under Uncertainty and Belief Space Planning </li>
+    <li> Optimization and Real-time Trajectory Generation </li>
+    <li> Robot Localization and Mapping </li>
+    <li> Sampling-based Robot Motion Planning Methods </li>
+    <li> Collision Avoidance Algorithms </li>
+    <li> Estimation and Control Theory </li>
+    <li> Stochastic Differential Equations </li>
+</ul>
+
+Familarity with at least half of the above areas is required.
+</p>
+
+<h4>Skills</h4>
+
+<p>
+<ul>
+    <li> Solid fundamentals in linear algebra, probability theory, and statistics </li>
+    <li> Demonstrated programming skills in C++/Python </li>
+    <li> Experience with Robot Operating System (ROS) </li>
+    <li> Strong written and verbal communications skills </li>
+    <li> Comfortable with development in Linux </li>
+</ul>
+</p>
+
+<h4>Apply</h4>
+
+<p>
+Interested candidates should send their resume and date of availability to to mobility.applicant@jpl.nasa.gov with the following email address:
+<ul>
+    <li> For US citizens and permanent residents use <font color="red">[intern-US 2017 Autonomy]</font> as the email subject. </li>
+    <li> Otherwise, use <font color="red">[intern 2017 Autonomy]</font> as the email subject. </li>
+</ul>
+</p>
+Some of the positions are limited to US citizens and permanent residents.
+
+<h4>About JPL</h4>
+
+<p>
+The Jet Propulsion Laboratory (JPL) is NASA’s lead center for robotic exploration of the Solar System. JPL’s core competency is the end-to-end implementation of robotic space missions to study Earth, the Solar System, and the Universe. JPL is part of NASA and California Institute of Technology (Caltech). Find more information on JPL Robotics at <a href="http://www-robotics.jpl.nasa.gov">http://www-robotics.jpl.nasa.gov</a>.
+</p>
+
+
+<br>
+</div>
+<br>
+
+<!--
+<a href="#" class="job" data-showdiv="visiting">
+<h3>Positions for visiting students</h3>
+</a>
+
+
+
+<h4>Apply</h4>
+
+<p>
+Interested candidates should send their resume and date of availability to mobility.applicant@jpl.nasa.gov, with email subject [Autonomy Research Internship]. Please find more information about the program at <a href="http://www.jpl.nasa.gov/edu/intern/apply/visiting-student-research-program"> http://www.jpl.nasa.gov/edu/intern/apply/visiting-student-research-program </a>.
+</p>
+
+<p>
+The Jet Propulsion Laboratory (JPL) is NASA’s lead center for robotic exploration of the Solar System. JPL’s core competency is the end-to-end implementation of robotic space missions to study Earth, the Solar System, and the Universe. JPL is part of NASA and California Institute of Technology (Caltech). Find more information on JPL Robotics at <a href="http://www-robotics.jpl.nasa.gov">http://www-robotics.jpl.nasa.gov</a>.
+</p>
+
+<br>
+</div>
+<br>
+-->
+
+</td>
+</tr>
+</table>
+
+<!-- Start of StatCounter Code 
+<script type="text/javascript">
+var sc_project=3899541; 
+var sc_invisible=0; 
+var sc_partition=47; 
+var sc_click_stat=1; 
+var sc_security="16aaea79"; 
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"> <a class="statcounter" href="http://www.statcounter.com/free_hit_counter.html"><img class="statcounter" src="http://c.statcounter.com/3899541/0/16aaea79/0/" alt="hidden hit counter" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+<p>&nbsp;</p>
+</body>
+</html>

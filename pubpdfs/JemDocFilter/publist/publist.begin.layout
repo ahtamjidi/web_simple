@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="../jemdoc.css" type="text/css" /><title>Publications</title>
+<script type="text/javascript">
+<!--
+// Toggle Display of BibTeX
+function toggleBibtex(articleid) {
+	var bib = document.getElementById('bib_'+articleid);
+	if (bib) {
+		if(bib.className.indexOf('bibtex') != -1) {
+		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+		}
+	} else {
+		return;
+	}
+}
+-->
+</script>
+</head>
+
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Ali Agha</div>
+<div class="menu-item"><a href="../index.htm">Home</a></div>
+<div class="menu-item"><a href="Research.htm">Research</a></div>
+<div class="menu-item"><a href="publications.htm" class="current">Publications</a></div>
+<div class="menu-item"><a href="courses.htm">Courses</a></div>
+<div class="menu-item"><a href="CV-Ali.pdf">CV</a></div>
+<div class="menu-item"><a href="software.htm">Software</a></div>
+<div class="menu-item"><a href="media.htm">News &amp; Media</a></div>
+<br>
+<div class="menu-item"><a href="positions.htm"><b>Open Positions</b></a></div>
+
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Publications </h1>
+</div>
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+
+
+<ol class="biblist">
+ 
+

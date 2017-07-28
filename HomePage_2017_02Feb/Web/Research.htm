@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="../jemdoc.css" type="text/css" />
+    <title>Research</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        p {
+            padding-left: 1em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table summary="Table for page layout." id="tlayout">
+        <tr valign="top">
+            <td id="layout-menu">
+                <div class="menu-category">Ali Agha</div>
+                <div class="menu-item"><a href="../index.htm">Home</a></div>
+                <div class="menu-item"><a href="Research.htm" class="current">Research</a></div>
+                <div class="menu-item"><a href="publications.htm">Publications</a></div>
+                <div class="menu-item"><a href="collaboration.htm" class="current">Collaboration</a></div>
+                <div class="menu-item"><a href="CV-Ali.pdf">CV</a></div>
+                <div class="menu-item"><a href="software.htm">Software</a></div>
+                <div class="menu-item"><a href="media.htm">News &amp; Media</a></div>
+                <br>
+                <div class="menu-item"><a href="positions.htm"><b>Open Positions</b></a></div>
+
+            </td>
+            <td id="layout-content">
+                <div id="toptitle">
+                    <h1>Research Topics</h1>
+                </div>
+
+
+
+                <p style="padding-left: 0em;">I have been working on a variety of research topics, ranging from stochastic control and information (belief) space planning, to simultaneous localization and mapping for mobile robots, robot vision, cooperative planning, and rescue robotics.
+                </p>
+
+                <p style="padding-left: 0em;">
+                    Traditionally, the perception and estimation modules serve the controller by providing an estimate of the system's state. I am interested in methods where the controller serves back the perception and estimation modules by taking the available information in the environment into account. This often can be formulated as a planning problem in the information space. As a result, the controller takes the system's state toward goal while taking maneuvers that steer the sensory information to improve perception, localization, and mapping accuracy, and hence achieve safer robot navigation.
+                </p>
+
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+                <h2>Planning High-Speed Safe Trajectories in Confidence-Rich Maps</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Research_SMAP.png" width="415" height="310">&nbsp;</td>
+                        <td align="left">
+                            <p>
+                                Planning safe, high-speed trajectories in unknown environments remains a major roadblock in the way toward achieving fast autonomous flight. Current state-of-the-art plan- ning approaches use sampling-based methods or trajectory optimization to obtain fast trajectories, whose safety is eval- uated by taking into account the current state estimate of the environment. In unknown environments, however, this leads to numerous stops caused by the need for re-planning the trajectory due to unexpected obstacles. In this work, we propose to use an active perception paradigm for planning. We predict the future uncertainty of the map and optimize trajectories to minimize re-planning risk. This leads to faster and safer trajectories. We evaluate the proposed planning approach in a series of simulation experiments, which show that we are able to achieve safer trajectories with a smaller number of re-planning stops and faster speeds.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+                <h2 id="quadcopter-autonomy-and-planning-under-uncertainty">Quadcopter Autonomy and Planning Under Uncertainty</h2>
+
+                <p style="padding-left: 0em;">I was a robotics researcher at Qualcomm research from 2015-16 where I started and led Qualcomm's research efforts in autonomy and planning under uncertainty. With the advancement of mobile processors’ computational power, development of highly integrated processors for robotics applications has gained attention. Qualcomm Snapdragon Flight, is a highly efficient development platform with a very small form factor designed to help manufacturers build the future of consumer robots and drones. One of the key components for consumer robots is 6D tracking (position and orientation). This is achieved using a very robust and efficient Visual-Inertial-Odometry that is highly optimized to fit to various application areas. During my time I started Qualcomm’s efforts on quadcopter autonomy and planning under uncertainty. My team successfully designed and implemented the full navigation stack on Qualcomm Snapdragon flight board. The navigation stack included Visual-Inertial Odometry (VIO), 3D reconstruction module based on data from stereo cameras, and motion planning under uncertainty. The research led to the first fully autonomous flight with all computation on a single board weighing less than 13 grams with size 58x40mm. We showcased the flight at consumer Electronics show in Jan’16. After this project.</p>
+                <div class="row">
+
+                    <div class="col-sm-4 centered text-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen" src="http://www.youtube.com/embed/fYQtAV7shoU"></iframe>
+                        </div>
+                        <p>Navigation and Mapping</p>
+                    </div>
+                    <div class="col-sm-4 centered text-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen" src="http://www.youtube.com/embed/_D96TWllOUg"></iframe>
+                        </div>
+                        <a href="https://www.qualcomm.com/news/onq/2015/12/16/robot-view-how-drones-and-machines-can-navigate-their-own">
+Qualcomm Research's Visual-Inertial Odometry (VIO)
+</a>
+                    </div>
+                    <div class="col-sm-4 centered text-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen" src="http://www.youtube.com/embed/FE1RRYZRgiw"></iframe>
+                        </div>
+                        <a href="https://www.qualcomm.com/news/snapdragon/2015/09/10/first-public-demo-snapdragon-flight-robotics-dev-platform-one-worlds">
+Snapdragon Flight robotics platform
+</a>
+                    </div>
+                </div>
+
+                <hr />
+
+
+
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+
+                <h2>Focused Mapping for Resource-Constrained Collision-Free Autonomous Navigation</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <!--%%%%%% video with a specific starting point -- for some reason /v/ in the video addresses are crucial -->
+                            <object width="500" height="320">
+<param name="movie" value="http://www.youtube.com/v/xJu4eL5FBBU&hl=en_US&start=231"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/xJu4eL5FBBU&hl=en_US&start=231" type="application/x-shockwave-flash" allowscriptaccess="always" width="500" height="320"></embed>
+</object> &nbsp;
+                        </td>
+                        <td align="left">
+                            <p>
+                                Long-term operations of resource-constrained robots typically require hard decisions be made about which data to process and/or retain. The question then arises of how to choose which data is most useful to keep to achieve the task at hand. As spatial scale grows, the size of the map will grow without bound, and as temporal scale grows, the number of measurements will grow without bound. In this work, we present the first known approach to tackle both of these issues. The approach has two stages. First, a subset of the variables (focused variables) is selected that are most useful for a particular task. Second, a task-agnostic and principled method (focused inference) is proposed to select a subset of the measurements that maximizes the information over the focused variables. The approach is then applied to the specific task of robot navigation in an obstacle-laden environment. A landmark selection method is proposed to minimize the probability of collision and then select the set of measurements that best localizes those landmarks. It is shown (in simulation and on physical systems) that the two-stage approach outperforms both only selecting measurement and only selecting landmarks in terms of minimizing the probability of collision.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Multi-robot Planning Under Uncertainty Using Decentralized Control of POMDPs via Macro-actions</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="https://www.youtube.com/embed/blgpzj5idFs" frameborder="0" allowfullscreen></iframe>&nbsp;</td>
+                        <td align="left">
+                            <p>
+                                The focus of this work is on solving multi-robot planning problems in continuous spaces with partial observability. Decentralized Partially Observable Markov Decision Processes (Dec-POMDPs) are general models for multi-robot coordination problems, but representing and solving Dec-POMDPs is often intractable for large problems. To allow for a high-level representation that is natural for multi-robot problems and scalable to large discrete and continuous problems, this paper extends the Dec-POMDP model to the Decentralized Partially Observable Semi-Markov Decision Process (Dec-POSMDP). The Dec-POSMDP formulation allows asynchronous decision-making by the robots, which is crucial in multi-robot domains. We also present an algorithm for solving this Dec-POSMDP which is much more scalable than previous methods since it can incorporate closed-loop belief space macro-actions in planning. These macro-actions are automatically constructed to produce robust solutions. The proposed method’s performance is evaluated on a complex multi-robot package delivery problem under uncertainty, showing that our approach can naturally represent multi-robot problems and provide high-quality solutions for large-scale problems.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Persistent Package Delivery Under Uncertainty Using Quad-copters</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="boeing_scaled.jpg" width="415" height="310">&nbsp;</td>
+                        <td align="left">
+                            <p>Currently there is a desire for the use of quadcopters in persistent missions. Unfortunately, these vehicles commonly face battery and fuel degradation issues. This work centers on development of a planner for long-endurance robotics missions that necessitate health (system’s correct functionality) management in partially observable Markov decision processes (POMDP). Specifically, we focus on the computational problem involving the extended endurance of quadrotors implemented for package delivery. To handle uncertainties in the real world applications (such as wind, measurement noise, etc) we plan in the space of probability distributions over both the vehicle-level and mission-level states. The former consideration includes parameters like vehicle location while the latter involves vehicular health and capabilities. We reduce online planning for mission-level states, performed by forward tree searches in the space of probability distributions, by utilizing the information roadmaps. In doing so, we enable the quadrotors to take preventive measures (such as going to a recharge/repair station) during their missions to preserve their health. We have proposed novel algorithms and a corresponding framework, presenting simulation results for dynamic health and partial observability in a persistent payload delivery mission with limited fuel.</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Window into Belief Space</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="https://www.youtube.com/embed/utM9zOYXgUY" frameborder="2em" allowfullscreen></iframe>&nbsp;</td>
+                        <td align="left">
+                            <p dir="ltr">Hardware-in-the-loop experiments are an essential step for transitioning implementation of planning and learning algorithms from simulations to real systems. During execution of algorithms, the planner/learner manipulates numerous latent variables such as probability distributions over state of the system and environment, predicted robot trajectories and transition probabilities. In this work, we describe a new visualization system that consists of multiple projectors and a real-time animation software that is tailored towards presenting the belief space of multi-agent planning and learning algorithms. We have implemented the visualization system in Aerospace Controls Lab's RAVEN indoor flight testbed at MIT. This system utilizes 18 Vicon motion-capture cameras tracking multiple heterogeneous robotic vehicle platforms. State and latent information for the vehicles are published using ROS (Robot Operating System), allowing a computer dedicated to visualization-rendering to package this information in an intuitive format for designers and spectators. The visualization is then projected onto the experiment area, with latent data and physical systems being run synchronously. This allows designers and spectators to observe hardware while simultaneously gaining an intuitive understanding of underlying decisions made by the algorithm.</p>
+                            <p>Below are some examples on how this system has been utilized for different projects in our lab. </p>
+                            <table class="imgtable" border="1em" width="100%">
+                                <tr>
+                                    <td> <center> Multi-robot (aerial &amp; ground) coordination </center></td>
+                                    <td> <center> RRT based path planning </center></td>
+                                    <td> <center> Forest Fire Management</center></td>
+                                    <td> <center> Multi-robot Path Planning</center></td>
+                                </tr>
+                                <tr>
+                                    <td><center><iframe style="padding:5px" width="250" height="132" src="https://www.youtube.com/embed/e8s98u_54kc" frameborder="0" allowfullscreen></iframe></center></td>
+                                    <td><center><iframe style="padding:5px" width="250" height="132" src="https://www.youtube.com/embed/ch3RGXIfohI" frameborder="0" allowfullscreen></iframe></center></td>
+                                    <td><center><iframe style="padding:5px" width="250" height="132" src="https://www.youtube.com/embed/LSW9bM65VEs" frameborder="0" allowfullscreen></iframe></center></td>
+                                    <td><center><iframe style="padding:5px" width="250" height="132" src="https://www.youtube.com/embed/f6UFyPUg934" frameborder="0" allowfullscreen></iframe></center></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Robust Real-time Replanning in Belief Space in Changing Environments (2013)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="http://www.youtube.com/embed/6cKzcfVDes8" frameborder="0" allowfullscreen></iframe>&nbsp;</td>
+                        <td align="left">
+                            <p dir="ltr">We have devised a principled way of real-time replanning in belief space via realization of the rollout policy based on the FIRM framework. This video demonstrates the performance of the method on physical mobile robots over a long (about 25 minutes) and complex run. In this run, we investigate how such a real-time replanning method can generate a feedback plan that is robust to discrepancies between real models and computational models as well as robust to changes in the environment, failures in the sensory system, and large deviations from the nominal plan. We believe these framework lay the ground work for further advancing the theoretical POMDP framework toward practical applications, and achieving long-term autonomy in robotic systems.</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Dynamic replanning in belief space using Information RoadMaps (IRM) -- (2011-2012)
+                </h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="https://www.youtube.com/embed/m4ojKJwqdQ4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+                        <td align="left">
+                            <p dir="ltr">Information RoadMap (IRM) is the first/only multi-query roadmap (graph) in the belief space (information space), i.e., the space of all possible probability distribution over the system state. Since it is a multi-query graph, IRM makes it possible to dynamically re-plan in real-time, in case of large deviations. In this video each FIRM node (Gaussian pdf) is shown by a blue mean and black covariance. The system belief is shown by red mean and covariance. The true system (unknown) is shown in green. When the true state (green) is pushed away from its nominal plan, IRM can replan in real-time by putting a new node and locally connecting it to the neighboring nodes, while the rest of graph remains unchanged. [
+                                <a href="https://parasol.tamu.edu/publications/download.php?file_id=813">
+                                    <font face="Georgia">paper</font>
+                                </a>].
+                            </p>
+                            <p dir="ltr">&nbsp;</p>
+                            <p dir="ltr">[<a href="https://www.youtube.com/watch?v=52BqaRQm4yY">video with 
+no annotation</a>]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>FIRM (Feedback-based Information RoadMap) -- (2011-2012)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="https://www.youtube.com/embed/KrFNIUSZzII?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>&nbsp;</td>
+                        <td align="left">
+                            <p>FIRM is a sampling-based framework for motion planning under uncertainty. It takes into account both process (motion) uncertainty and sensing uncertainty. It relies on &quot;stabilizers&quot; that drive the system belief (posterior distribution of the filter) to predefined beliefs (FIRM nodes). This stabilization leads to desirable features such as robustness, reliability, and scalability. In this video the FIRM nodes (Gaussian distributions) are shown by a blue mean and black covariance. The system belief is shown by red mean and covariance. The true system (unknown) is shown in green. The closer the robot is to information sources (black stars) the less sensing uncertainty. Based on the FIRM plan, the robot detours from the shortest path to a more informative path on which the filter and the controller work better and can minimize the collision probability. We have designed different varaints of FIRM for linearly stabilizable systems, [
+                                <font face="Georgia"><a href="https://parasol.tamu.edu/publications/download.php?file_id=813">paper</a></font>], non-holonomic systems, [
+                                <font face="Georgia"><a href="https://parasol.tamu.edu/publications/download.php?file_id=772">paper</a></font>], and non-stoppable systems, [
+                                <a href="https://parasol.tamu.edu/publications/download.php?file_id=814">
+                                    <font face="Georgia">paper</font>
+                                </a>].</p>
+                            <p>[<a href="https://www.youtube.com/watch?v=IGML2hYjWhg">video with no 
+annotation</a>]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Cooperative Multi-robot Motion Planning Under Uncertainty</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="http://www.youtube.com/embed/P6EkYc92abw?feature=player_embedded" frameborder="0" allowfullscreen></iframe>&nbsp;</td>
+                        <td align="left">
+                            <p>Stochastic cooperative planning under uncertainty aims at exploiting capabilities of the different (possibly heterogeneous) agents in a team to increase the chance of successfully performing a given task under uncertainty. In this video the goal is to reach a final team configuration, while minimizing the collision probability. There are tree robots, whose Gaussian belief (state pdf) is shown. The red robot has access to a GPS and two other robots can only measure their relative positions with respect to the red robot. However, the closer the robots, the less the measurement uncertainty. Using information roadmaps for cooperative control, the emergent behavior is interesting: the red robot detours from its shortest path and helps the other robots to shrink their uncertainty and reach the goal configuration with a minimum collision probability.</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Uncertainty Propagation in Nonlinear Dynamical Systems through Fokker-Planck-Kolmogorov PDE (2010)
+                </h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <iframe width="500" height="320" src="http://www.youtube.com/embed/rHlUfsZ-K-Y?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>&nbsp;</td>
+                        <td align="left">
+                            <p>Fokker-Planck-Kolmogorov Equation (FPKE) is a parabolic partial differential equation that lies at the heart of the uncertainty propagation problem and nonlinear filtering because it captures the exact description of evolution of the state probability density function (pdf) through continuous dynamical systems. I worked on solving this equation numerically based on Finite Element Methods (FEM) using
+                                <a href="http://www.dealii.org/">dealii</a> package. This video shows the evolution of the system pdf through the 2D stochastic nonlinear Duffing oscillator system. As expected, the pdf converges to its bimodal non-Gaussian stationary distribution.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Medical Needle Steering Using Information Roadmaps</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Presentation_tuesday_2.jpg" alt="Needle steering" width="425" height="230">&nbsp;</td>
+                        <td align="left">
+                            <p>Robot-assisted medical procedures, such as medical needle steering, require safe and accurate motions. Information RoadMaps (IRM) seamlessly incorporate the constraints into the control problem and thus the planner can find a feedback that minimizes the probability of collision with sensitive regions in tissue. The left figure shows a Gd-EOB-DTPA–enhanced 3D gradient-echo MRI of a 64-y-old patient with liver metastases due to breast cancer. The right figure shows results of two sample runs using IRM. Due to the feedback nature of the solution, the path is determined at run-time based on the tissue deformation and sensing noise. [
+                                <font face="Georgia"><a href="pubpdfs/NeedlePoster.pdf">poster</a></font>]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Detecting and Modeling Planar Mirrors in The Environment for Mobile Robot Navigation Purposes (2009)
+                </h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Resear5.jpg" width="345" height="300">&nbsp;</td>
+                        <td align="left">
+                            <p>We devised a method for the detection and recognition of a large planar mirror based on the images captured by a monocular camera. We derive a mirror transformation matrix in a homogeneous coordinate and geometric constraints for corresponding real and virtual feature points in the image. We find that existing feature detection methods are not reflection invariant. We introduce a secondary artificial reflection to virtual features to generate secondary features which are proven to share a rigid body motion relationship with the original feature set. Finally, we propose an iterative strategy to adjust the secondary mirror configuration so that existing feature matching methods can be used. The combined method yields a robust mirror detection algorithm which has been verified in physical experiments. [
+                                <font face="Georgia"><a href="pubpdfs/Ali-mirror-ICRA11.pdf">paper</a></font>]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Rescue Robotics (2006-2008)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td><iframe width="500" height="320" src="https://www.youtube.com/embed/HsOg3DVXgyg" frameborder="0" allowfullscreen></iframe></td>
+                        <!--<td><img src="Rescue1.JPG" width="380" height="290">&nbsp;</td>-->
+                        <td align="left">
+                            <p>I was a member of
+                                <a href="http://saba.kntu.ac.ir/resquake/index.htm">Resquake robotics group</a>, at KN Toosi University of Technology, from 2006 to 2008. The core team members were Ehsan Mihankhah, Arash Kalantari, Ehsan Aboosaeidan, Hesam Semsarilar, and Ali Jazayeri, experts in rescue robotics. The team won many prizes in national and international rescue robotics contests. Resquake built different tele-operated and autonomous robots, and my responsibility in this group was designing algorithms for Autonomous Navigation and SLAM in rescue environments, for the autonomous robot. </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>LV-SLAM (2007-2008)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="fusion.gif" width="359" height="171">&nbsp;</td>
+                        <td align="left">
+                            <p>Fusing the information of a monocular camera and range scanners for SLAM in mobile robots. </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Feature-based Range Scan Matching and LRF-based EKF-SLAM (2006-2007)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Resear6.jpg" width="275" height="287">&nbsp;</td>
+                        <!--<img src="Resear1.jpg" width="145" height="100"><img src="Resear2.jpg" width="129" height="100"><img src="Resear6.jpg" width="275" height="220">&nbsp;</td>-->
+                        <td align="left">
+                            <p dir="ltr">This project is concerned with the feature extraction and data associations algorithms in dealing with laser range finders.&nbsp; The proposed method uses global information of the whole scan data and local information around feature points to perform data association.</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Consistency Analyses of EKF-based SLAM</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Resear7.jpg" width="300" height="225">&nbsp;</td>
+                        <td align="left">
+                            <p>This work is concerned with the consistency analysis and aims to improve the process consistency while reducing the computational cost. </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Hierarchical Q-Learning (2005)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Resear15.jpg" width="364" height="158">&nbsp;</td>
+                        <td align="left">
+                            <p>Hierarchical reinforcement learning attempts to cope with “curse of dimensionality” by decomposing the state space to the simpler parts. In this work, we decompose the tasks to simpler behaviors, which are connected to each other in a subsumption architecture. Methods for updating the value functions, credit assignment, and structure learning are studied in the proposed framework.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>Path Planning using Hopfield ANN (2005)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <img src="Resear17.jpg" width="390" height="197">&nbsp;</td>
+                        <td align="left">
+                            <p dir="ltr">In this project, we were using Hopfield Artificial Neural Networks (ANNs) to find a path from start point to destination, in the presence of obstacles. The method is based on energy propagation concepts through neurons of the recurrent Hopfield network to build a surface, whose maximum gradient at every point guides the robot toward the goal point in an efficient way. </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>ACO for solving TSP (2004)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <font face="Arial">
+                                <img border="0" src="Resear18.jpg" width="331" height="263"></font>&nbsp;</td>
+                        <td align="left">
+                            <p>Solving Traveling Salesman Person problem (TSP) using Ant Colony System-based optimization (ACO) through adding a local optimizer. </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <h2>RoboSoccer Project (2003-2004)</h2>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <font face="Arial"><img border="0" src="Robo_soccer3.jpg" width="376" height="286"></font>&nbsp;</td>
+                        <td align="left">
+                            <p>This cool project was my second serious project in robotics in my undergraduate studies. We were a team of 8 junior or senior students, building small-size soccer robots for Robocup competitions. I was the leader of this team during 2003-2005, before I leave Tabriz University for my graduate studies. </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <!--<h2>Line-Follower Robot</h2>
+<table class="imgtable"><tr><td>
+<font face="Arial">
+<img border="0" src="Image013.jpg" width="349" height="257"></font>&nbsp;</td>
+<td align="left"><p>Very simple line follower robot! We (I, Arash Arami and Reza Nasiri) built this robot, when we were freshmen, to participate in a 
+robotic competition (at 2002). I love this very simple robot, since it was my very first step in robotics! To design this robot I read a lot on Microcontroller programming, Electronics, and Logical Circuits, while I was only a freshman. This was our 14th design, after 13 unsuccessful tries! </p>
+</td></tr></table>-->
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<script>
+    // Find all the YouTube video embedded on a page
+    var videos = document.getElementsByClassName("youtube");
+
+    for (var i = 0; i < videos.length; i++) {
+
+        var youtube = videos[i];
+
+        // Based on the YouTube ID, we can easily find the thumbnail image
+        var img = document.createElement("img");
+        img.setAttribute("src", "http://i.ytimg.com/vi/" +
+            youtube.id + "/hqdefault.jpg");
+        img.setAttribute("class", "thumb");
+
+
+        // Overlay the Play icon to make it look like a video player
+        var circle = document.createElement("div");
+        circle.setAttribute("class", "circle");
+
+        youtube.appendChild(img);
+        youtube.appendChild(circle);
+
+        // Attach an onclick event to the YouTube Thumbnail
+        youtube.onclick = function() {
+
+            // Create an iFrame with autoplay set to true
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("src",
+                "https://www.youtube.com/embed/" + this.id +
+                "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1");
+
+            // The height and width of the iFrame should be the same as parent
+            iframe.style.width = this.style.width;
+            iframe.style.height = this.style.height;
+
+            // Replace the YouTube thumbnail with YouTube HTML5 Player
+            this.parentNode.replaceChild(iframe, this);
+
+        };
+    }
+
+</script>
+
+
+</html>
