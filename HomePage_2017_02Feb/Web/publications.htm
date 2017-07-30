@@ -37,7 +37,19 @@
             counter-increment: elementcounter;
             /*            font-weight: bold;*/
         }
-        
+        li.N:before {
+            content: "N" counter(elementcounter) ". ";
+            counter-increment: elementcounter;
+            /*            font-weight: bold;*/
+        }
+
+        li.S:before {
+            content: "S" counter(elementcounter) ". ";
+            counter-increment: elementcounter;
+            /*            font-weight: bold;*/
+        }
+
+
         li.C:before {
             content: "C" counter(elementcounter) ". ";
             counter-increment: elementcounter;
@@ -80,17 +92,15 @@
     <table summary="Table for page layout." id="tlayout">
         <tr valign="top">
             <td id="layout-menu">
-                <div class="menu-category">Ali Agha</div>
-                <div class="menu-item"><a href="../index.htm">Home</a></div>
-                <div class="menu-item"><a href="Research.htm">Research</a></div>
-                <div class="menu-item"><a href="publications.htm" class="current">Publications</a></div>
-                <div class="menu-item"><a href="collaboration.htm" class="current">Collaboration</a></div>
-                <div class="menu-item"><a href="CV-Ali.pdf">CV</a></div>
-                <div class="menu-item"><a href="software.htm">Software</a></div>
-                <div class="menu-item"><a href="media.htm">News &amp; Media</a></div>
-                <br>
-                <div class="menu-item"><a href="positions.htm"><b>Open Positions</b></a></div>
-
+<div class="menu-item"><a href="../index.htm">Home</a></div>
+<div class="menu-item"><a href="Research.htm">Research</a></div>
+<div class="menu-item"><a href="publications.htm" class="current">Publications</a></div>
+<div class="menu-item"><a href="courses.htm">Courses</a></div>
+<div class="menu-item"><a href="CV-Ali.pdf">CV</a></div>
+<div class="menu-item"><a href="software.htm">Software</a></div>
+<div class="menu-item"><a href="media.htm">News &amp; Media</a></div>
+<br>
+<div class="menu-item"><a href="positions.htm"><b>Open Positions</b></a></div>
             </td>
             <td id="layout-content">
                 <div id="toptitle">
@@ -99,6 +109,72 @@
                 <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
                 <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
                 <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                <ol>
+
+
+                    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+                    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+                    <!-- Item: journals -->
+                    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+                    <h2>Selected Papers</h2>
+                
+
+                    <p>
+                        <li class="S">
+
+
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>FIRM: Sampling-based Feedback Motion Planning Under Motion Uncertainty and Imperfect Measurements</b>,&rdquo;<i>International Journal of Robotics Research (IJRR)</i> , vol. 33, no. 2, pp. 268-304, 2014.
+                            <br />
+                            <!--<a href="javascript:toggleBibtex('Agha14-IJRR')">[BibTeX]</a>-->
+
+                            (<a href="http://people.lids.mit.edu/aliagha/Web/pubpdfs/2014.Ali.Suman.ea.IJRR_FIRM.pdf">pdf</a>)
+
+                        </li>
+
+                    </p>
+                                        <br>
+
+                    <p>
+                        <li class="S">
+
+                            [Under Review] Ali-akbar Agha-mohammadi, Eric Heiden, Karol Hausman, Gaurav Sukhatme, &ldquo;<b>Confidence-rich Grid Mapping: An environment representation for safety-critical navigation</b>,&rdquo; .
+
+                            <!--Under Review.
+-->
+
+                            <br />
+
+                            <!--<a href="javascript:toggleBibtex('Agha17-??')">[BibTeX]</a>-->
+                         (<a href="pubpdfs/2017.Ali.Heiden.ea.CRM.pdf">pdf</a>)
+
+
+                        </li>
+                    </p>
+
+
+                    <!--
+<div id="bib_Agha14-IJRR" class="bibtex noshow">
+<pre>
+@article{Agha14-IJRR,
+  author = {Agha-mohammadi, Ali-akbar and Chakravorty, Suman and Amato, Nancy},
+  title = {FIRM: Sampling-based Feedback Motion Planning Under Motion Uncertainty and Imperfect Measurements},
+  journal = {International Journal of Robotics Research (IJRR)},
+  publisher = {SAGE journals},
+  year = {2014},
+  volume = {33},
+  number = {2},
+  pages = {268--304},
+  url = {http://people.lids.mit.edu/aliagha/Web/pubpdfs/2014.Ali.Suman.ea.IJRR_FIRM.pdf}
+}
+</pre>
+</div>
+-->
+                    <br>
+                </ol>
+
                 <ol>
 
 
@@ -118,12 +194,12 @@
 
                     <p>
                         <li class="J">
-                            [Under Review] Ali-akbar Agha-mohammadi et al., &ldquo;
-                            <b>SLAP: Simultaneous Localization and Planning for Physical Mobile Robots via Enabling Dynamic Replanning in Belief Space</b>,&rdquo;
+                            [Under Review] Ali-akbar Agha-mohammadi et al.,&ldquo;<b>SLAP: Simultaneous Localization and Planning for Physical Mobile Robots via Enabling Dynamic Replanning in Belief Space</b>,&rdquo;
                             <i>IEEE Transactions on Robotics (TRO)</i> .
                             <br />
+                            (pdf)
                             <!--<a href="javascript:toggleBibtex('Agha??-TRO')">[BibTeX]</a>-->
-                            (<a href="http://arxiv.org/pdf/1510.07380v2.pdf">pdf</a>)
+                            <!-- (<a href="http://arxiv.org/pdf/1510.07380v2.pdf">pdf</a>) -->
                         </li>
                     </p>
                     <!--
@@ -151,9 +227,7 @@
                         <li class="J">
 
 
-                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Christopher Amato, Shih–Yuan Liu, Jonathan P. How and John Vian, &ldquo;
-
-                            <b>Decentralized Control of Partially Observable Markov Decision Processes using Belief Space Macro-actions</b>,&rdquo;
+                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Christopher Amato, Shih–Yuan Liu, Jonathan P. How and John Vian, &ldquo;<b>Decentralized Control of Partially Observable Markov Decision Processes using Belief Space Macro-actions</b>,&rdquo;
 
                             <i>International Journal of Robotics Research (IJRR)</i> , vol. 36, no. 2, pp. 231-258, 2017.
                             <br />
@@ -191,9 +265,7 @@
                         <li class="J">
 
 
-                            Beipeng Mu, Liam Paull, Ali-Akbar Agha-Mohammadi, John J. Leonard and Jonathan P. How, &ldquo;
-
-                            <b>Two-Stage Focused Inference for Resource-Constrained Collision-Free Navigation</b>,&rdquo;
+                            Beipeng Mu, Liam Paull, Ali-Akbar Agha-Mohammadi, John J. Leonard and Jonathan P. How, &ldquo;<b>Two-Stage Focused Inference for Resource-Constrained Collision-Free Navigation</b>,&rdquo;
 
                             <i>IEEE Transactions on Robotics (TRO)</i> , vol. 33, no. 1, pp. 124-140, 2017.
                             <br />
@@ -232,11 +304,7 @@
                         <li class="J">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>FIRM: Sampling-based Feedback Motion Planning Under Motion Uncertainty and Imperfect Measurements</b>,&rdquo;
-
-                            <i>International Journal of Robotics Research (IJRR)</i> , vol. 33, no. 2, pp. 268-304, 2014.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>FIRM: Sampling-based Feedback Motion Planning Under Motion Uncertainty and Imperfect Measurements</b>,&rdquo;<i>International Journal of Robotics Research (IJRR)</i> , vol. 33, no. 2, pp. 268-304, 2014.
                             <br />
                             <!--<a href="javascript:toggleBibtex('Agha14-IJRR')">[BibTeX]</a>-->
 
@@ -273,15 +341,13 @@
                         <li class="J">
 
 
-                            Bernard Michini, Thomas J. Walsh, Ali-akbar Agha-Mohammadi and Jonathan P. How, &ldquo;
-
-                            <b>Bayesian Nonparametric Reward Learning From Demonstration</b>,&rdquo;
+                            Bernard Michini, Thomas J. Walsh, Ali-akbar Agha-Mohammadi and Jonathan P. How, &ldquo;<b>Bayesian Nonparametric Reward Learning From Demonstration</b>,&rdquo;
 
                             <i>IEEE Transactions on Robotics (TRO)</i> , vol. 31, no. 2, pp. 369-386, April 2015.
                             <br />
                             <!--<a href="javascript:toggleBibtex('Michini15_TRO')">[BibTeX]</a>-->
 
-                            (<a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7076638&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7076638">pdf</a>)
+                            (<a href="pubpdfs/2015.Michini.Walsh.Ali.ea.pdf">pdf</a>)
                         </li>
                     </p>
                     <!--
@@ -312,15 +378,12 @@
 
                         <li class="J">
 
-                            Ali-akbar Agha-mohammadi, Saurav Agarwal and Suman Chakravorty, &ldquo;
-
-                            <b>Periodic-node Graph-based Framework for Stochastic Control of Small Aerial Vehicles</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Saurav Agarwal and Suman Chakravorty, &ldquo;<b>Periodic-node Graph-based Framework for Stochastic Control of Small Aerial Vehicles</b>,&rdquo;
 
                             <i>The ASME Journal of Dynamic Systems, Measurement and Control, Special Issue on Stochastic Models, Control and Algorithms in Robotics</i> , vol. 137, no. 3, pp. 031005, 2015.
                             <br />
                             <!--<a href="javascript:toggleBibtex('Agha15-periodicFIRM')">[BibTeX]</a>-->
-
-                            (pdf)
+                            (<a href="pubpdfs/2015.Ali.Saurav.Suman.ASME_periodic.pdf">pdf</a>)
 
                         </li>
                     </p>
@@ -351,15 +414,12 @@
 
 
 
-                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Yufan Chen, Nazim Kemal Ure, Shih-Yuan Liu, Brett Lopez, Rajeev Surati, Jonathan P. How and John L. Vian, &ldquo;
-
-                            <b>Measurable Augmented Reality for Prototyping Cyberphysical Systems: A Robotics Platform to Aid the Hardware Prototyping and Performance Testing of Algorithms</b>,&rdquo;
+                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Yufan Chen, Nazim Kemal Ure, Shih-Yuan Liu, Brett Lopez, Rajeev Surati, Jonathan P. How and John L. Vian, &ldquo;<b>Measurable Augmented Reality for Prototyping Cyberphysical Systems: A Robotics Platform to Aid the Hardware Prototyping and Performance Testing of Algorithms</b>,&rdquo;
 
                             <i>IEEE Control Systems Magazine (CSM)</i> , vol. 36, no. 6, pp. 65-87, 2016.
                             <br />
                             <!--<a href="javascript:toggleBibtex('OmidShafiei15-CSM')">[BibTeX]</a>-->
-
-                            (pdf)
+                            (<a href="pubpdfs/2016.Shy.Ali.ea.CSM_Measurable.pdf">pdf</a>)
 
                         </li>
 
@@ -432,9 +492,7 @@
                     <p>
                         <li class="C">
 
-                            [Under Review] Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Confidence-aware Occupancy Grid Mapping: Toward High-speed Vision-based UAV Navigation</b>,&rdquo; .
+                            [Under Review] Ali-akbar Agha-mohammadi, Eric Heiden, Karol Hausman, Gaurav Sukhatme, &ldquo;<b>Confidence-rich Grid Mapping: An environment representation for safety-critical navigation</b>,&rdquo; .
 
                             <!--Under Review.
 -->
@@ -442,8 +500,8 @@
                             <br />
 
                             <!--<a href="javascript:toggleBibtex('Agha17-??')">[BibTeX]</a>-->
+                         (<a href="pubpdfs/2017.Ali.Heiden.ea.CRM.pdf">pdf</a>)
 
-                            (pdf)
 
                         </li>
                     </p>
@@ -471,9 +529,7 @@
                         <li class="C">
 
 
-                            Eric Heiden, Karol Hausman, Gaurav S. Sukhatme and Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Planning High-speed Safe Trajectories in Confidence-rich Map</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Vancouver, Canada, September 2017.
+                            Eric Heiden, Karol Hausman, Gaurav S. Sukhatme and Ali-akbar Agha-mohammadi, &ldquo;<b>Planning High-speed Safe Trajectories in Confidence-rich Map</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Vancouver, Canada, September 2017.
 
                             <!--
 -->
@@ -481,8 +537,8 @@
                             <br />
 
                             <!--<a href="javascript:toggleBibtex('Heiden17-IROS')">[BibTeX]</a>-->
-
-                            (pdf)
+                            (<a href="pubpdfs/2017.Eric.Ali.ea.IROS_SMAP_Planning.pdf">pdf</a>)
+                            
                         </li>
 
 
@@ -510,9 +566,7 @@
                         <li class="C">
 
 
-                            Brian Ichter, Edward Schmerling, Ali-akbar Agha-mohammadi and Marco Pavone, &ldquo;
-
-                            <b>Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Singapore, May 2017.
+                            Brian Ichter, Edward Schmerling, Ali-akbar Agha-mohammadi and Marco Pavone, &ldquo;<b>Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Singapore, May 2017.
 
                             <!--
 -->
@@ -520,8 +574,8 @@
                             <br />
 
                             <!--<a href="javascript:toggleBibtex('Ichter17-ICRA')">[BibTeX]</a>-->
-
-                            (pdf)
+                            (<a href="https://arxiv.org/pdf/1607.06886.pdf">pdf</a>)
+                           
                         </li>
 
 
@@ -549,9 +603,7 @@
                         <li class="C">
 
 
-                            Beipeng Mu, Matthew Giamou, Liam Paull, Ali-akbar Agha-mohammadi, John J. Leonard and Jonathan P. How, &ldquo;
-
-                            <b>Information-Based Active SLAM Via Topological Feature Graphs</b>,&rdquo; in <i>IEEE Conference on Decision and Control (CDC)</i>, Las Vegas, NV, December 2016.
+                            Beipeng Mu, Matthew Giamou, Liam Paull, Ali-akbar Agha-mohammadi, John J. Leonard and Jonathan P. How, &ldquo;<b>Information-Based Active SLAM Via Topological Feature Graphs</b>,&rdquo; in <i>IEEE Conference on Decision and Control (CDC)</i>, Las Vegas, NV, December 2016.
 
                             <!--
 -->
@@ -559,8 +611,7 @@
                             <br />
 
                             <!--<a href="javascript:toggleBibtex('Mu16-CDC')">[BibTeX]</a>-->
-
-                            (pdf)
+                            (<a href="http://people.csail.mit.edu/lpaull/publications/Mu_CDC_2016.pdf">pdf</a>)
 
                         </li>
 
@@ -588,9 +639,7 @@
                         <li class="C">
 
 
-                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Christopher Amato, Shih-Yuan Liu, Jonathan P. How and John L. Vian, &ldquo;
-
-                            <b>Graph-based Cross Entropy Method for Solving Multi-Robot Decentralized POMDPs</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Stockholm, Sweden, May 2016.
+                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Christopher Amato, Shih-Yuan Liu, Jonathan P. How and John L. Vian, &ldquo;<b>Graph-based Cross Entropy Method for Solving Multi-Robot Decentralized POMDPs</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Stockholm, Sweden, May 2016.
 
                             <!--
 -->
@@ -598,8 +647,7 @@
                             <br />
 
                             <!--<a href="javascript:toggleBibtex('Omidshafiei16-ICRA')">[BibTeX]</a>-->
-
-                            (pdf)
+                            (<a href="https://pdfs.semanticscholar.org/ce78/1a28fab35a449c0a6bb35bb9f22088565cc1.pdf">pdf</a>)
 
                         </li>
 
@@ -627,9 +675,7 @@
 
                         <li class="C">
 
-                            Beipeng Mu, Ali-akbar Agha-mohammadi, Liam Paull, Matthew Graham, Jonathan How and John Leonard, &ldquo;
-
-                            <b>Two-Stage Focused Inference for Resource-Constrained Collision-Free Navigation</b>,&rdquo; in <i>Robotics: Science and Systems (RSS)</i>, Rome, Italy, July 2015.
+                            Beipeng Mu, Ali-akbar Agha-mohammadi, Liam Paull, Matthew Graham, Jonathan How and John Leonard, &ldquo;<b>Two-Stage Focused Inference for Resource-Constrained Collision-Free Navigation</b>,&rdquo; in <i>Robotics: Science and Systems (RSS)</i>, Rome, Italy, July 2015.
 
                             <!--
 -->
@@ -667,9 +713,7 @@
                         <li class="C">
 
 
-                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Christopher Amato and Jonathan P. How, &ldquo;
-
-                            <b>Decentralized control of Partially Observable Markov Decision Processes using belief space macro-actions</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Washington, Seattle , pp. 5962-5969, May 2015.
+                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Christopher Amato and Jonathan P. How, &ldquo;<b>Decentralized control of Partially Observable Markov Decision Processes using belief space macro-actions</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Washington, Seattle , pp. 5962-5969, May 2015.
 
                             <!--
 -->
@@ -677,9 +721,7 @@
                             <br />
 
                             <!--<a href="javascript:toggleBibtex('Omidshafiei15_icra')">[BibTeX]</a>-->
-
-                            (pdf)
-
+                            (<a href="https://dspace.mit.edu/openaccess-disseminate/1721.1/97187">pdf</a>)
                         </li>
 
                     </p>
@@ -708,9 +750,7 @@
                         <li class="C">
 
 
-                            N. Kemal Ure, Shayegan Omidshafiei, Brett Thomas Lopez, Ali-akbar Agha-mohammadi, Jonathan P. How and John Vian, &ldquo;
-
-                            <b>Online heterogeneous multiagent learning under limited communication with applications to forest fire management</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Hamburg, Germany, pp. 5181-5188, September 2015.
+                            N. Kemal Ure, Shayegan Omidshafiei, Brett Thomas Lopez, Ali-akbar Agha-mohammadi, Jonathan P. How and John Vian, &ldquo;<b>Online heterogeneous multiagent learning under limited communication with applications to forest fire management</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Hamburg, Germany, pp. 5181-5188, September 2015.
 
                             <!--
 -->
@@ -749,9 +789,7 @@
                         <li class="C">
 
 
-                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Yufan Chen, Nazim Kemal Ure, Jonathan P. How, John L. Vian and Rajeev Surati, &ldquo;
-
-                            <b>Measurable Augmented Reality for Prototyping Cyber-Physical Systems (MARCPS)</b>,&rdquo; in <i>AIAA Infotech</i>, Kissimmee, FL, January 2016.
+                            Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Yufan Chen, Nazim Kemal Ure, Jonathan P. How, John L. Vian and Rajeev Surati, &ldquo;<b>Measurable Augmented Reality for Prototyping Cyber-Physical Systems (MARCPS)</b>,&rdquo; in <i>AIAA Infotech</i>, Kissimmee, FL, January 2016.
 
                             <!--
 -->
@@ -788,9 +826,7 @@
 
                         <li class="C">
 
-                            Ali-akbar Agha-mohammadi, N. Kemal Ure, Jonathan P. How and John Vian, &ldquo;
-
-                            <b>Health aware stochastic planning for persistent package delivery missions using quadrotors</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Chicago, IL, pp. 3389-3396, September 2014.
+                            Ali-akbar Agha-mohammadi, N. Kemal Ure, Jonathan P. How and John Vian, &ldquo;<b>Health aware stochastic planning for persistent package delivery missions using quadrotors</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Chicago, IL, pp. 3389-3396, September 2014.
 
                             <!--
 -->
@@ -829,9 +865,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Saurav Agarwal, Aditya Mahadevan, Suman Chakravorty, Daniel Tomkins, Jory Denny and Nancy Amato, &ldquo;
-
-                            <b>Robust Online Belief Space Planning in Changing Environments: Application to Physical Mobile Robots</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Hong Kong, China, May 2014.
+                            Ali-akbar Agha-mohammadi, Saurav Agarwal, Aditya Mahadevan, Suman Chakravorty, Daniel Tomkins, Jory Denny and Nancy Amato, &ldquo;<b>Robust Online Belief Space Planning in Changing Environments: Application to Physical Mobile Robots</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Hong Kong, China, May 2014.
 
                             <!--
 -->
@@ -869,9 +903,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Sampling-based Stochastic Control with Constraints: A Unified Approach in State and Information Spaces</b>,&rdquo; in <i>American Control Conference (ACC)</i>, Washington DC, June 2013.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Sampling-based Stochastic Control with Constraints: A Unified Approach in State and Information Spaces</b>,&rdquo; in <i>American Control Conference (ACC)</i>, Washington DC, June 2013.
 
                             <!--
 -->
@@ -908,9 +940,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Sampling-based nonholonomic motion planning in belief space via Dynamic Feedback Linearization-based FIRM</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Vilamoura, Portugal, October 2012.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Sampling-based nonholonomic motion planning in belief space via Dynamic Feedback Linearization-based FIRM</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Vilamoura, Portugal, October 2012.
 
                             <!--
 -->
@@ -919,7 +949,7 @@
 
                             <!--<a href="javascript:toggleBibtex('Agha12-DFL-IROS')">[BibTeX]</a>-->
 
-                            (pdf)
+                            (<a ref="https://pdfs.semanticscholar.org/1420/87d83bada7c91cb0483d376d3f3c0b7dd1d8.pdf">pdf</a>)
 
                         </li>
 
@@ -947,9 +977,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>On the Probabilistic Completeness of the Sampling-based Feedback Motion Planners in Belief space</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Minneapolis, MN, May 2012.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>On the Probabilistic Completeness of the Sampling-based Feedback Motion Planners in Belief space</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Minneapolis, MN, May 2012.
 
                             <!--
 -->
@@ -986,9 +1014,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>FIRM: Feedback controller-based Information-state RoadMap -A Framework for Motion Planning Under Uncertainty-</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, SanFrancisco, CA, September 2011.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>FIRM: Feedback controller-based Information-state RoadMap -A Framework for Motion Planning Under Uncertainty-</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, SanFrancisco, CA, September 2011.
 
                             <!--
 -->
@@ -1025,9 +1051,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi and Dezhen Song, &ldquo;
-
-                            <b>Robust recognition of planar mirrored walls using a single view</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Shanghai, China, pp. 1186-1191, May 2011.
+                            Ali-akbar Agha-mohammadi and Dezhen Song, &ldquo;<b>Robust recognition of planar mirrored walls using a single view</b>,&rdquo; in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Shanghai, China, pp. 1186-1191, May 2011.
 
                             <!--
 -->
@@ -1066,9 +1090,7 @@
                         <li class="C">
 
 
-                            Amirhossein Tamjidi, Hamid D. Taghirad and Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>On the consistency of EKF-SLAM: Focusing on the observation models</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, St. Louis, MO, pp. 2083-2088, October 2009.
+                            Amirhossein Tamjidi, Hamid D. Taghirad and Ali-akbar Agha-mohammadi, &ldquo;<b>On the consistency of EKF-SLAM: Focusing on the observation models</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, St. Louis, MO, pp. 2083-2088, October 2009.
 
                             <!--
 -->
@@ -1107,9 +1129,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Amirhossein Tamjidi and Hamid D. Taghirad, &ldquo;
-
-                            <b>A solution for SLAM through augmenting vision and range information</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Nice,France, pp. 1037-1042, September 2008.
+                            Ali-akbar Agha-mohammadi, Amirhossein Tamjidi and Hamid D. Taghirad, &ldquo;<b>A solution for SLAM through augmenting vision and range information</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS)</i>, Nice,France, pp. 1037-1042, September 2008.
 
                             <!--
 -->
@@ -1148,9 +1168,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Amirhossein Tamjidi and Hamid D. Taghirad, &ldquo;
-
-                            <b>SLAM Based On the LRF Information as the Only Data Source</b>,&rdquo; in <i>International Federation of Automatic Control, (IFAC)</i>, Seoul,Korea, pp. 14657-14662, July 2008.
+                            Ali-akbar Agha-mohammadi, Amirhossein Tamjidi and Hamid D. Taghirad, &ldquo;<b>SLAM Based On the LRF Information as the Only Data Source</b>,&rdquo; in <i>International Federation of Automatic Control, (IFAC)</i>, Seoul,Korea, pp. 14657-14662, July 2008.
 
                             <!--
 -->
@@ -1188,9 +1206,7 @@
                         <li class="C">
 
 
-                            Ali-akbar Agha-mohammadi, Amirhossein Tamjidi, Hamid D. Taghirad and Ehsan Mihankhah, &ldquo;
-
-                            <b>Feature-Based Range Scan Matching for Accurate and High Speed Mobile Robot Localization</b>,&rdquo; in <i>European Conference on Mobile Robots (ECMR)</i>, Freiburg, Germany, pp. 253-258, September 2007.
+                            Ali-akbar Agha-mohammadi, Amirhossein Tamjidi, Hamid D. Taghirad and Ehsan Mihankhah, &ldquo;<b>Feature-Based Range Scan Matching for Accurate and High Speed Mobile Robot Localization</b>,&rdquo; in <i>European Conference on Mobile Robots (ECMR)</i>, Freiburg, Germany, pp. 253-258, September 2007.
 
                             <!--
 -->
@@ -1239,9 +1255,7 @@
                         <li class="W">
 
 
-                            Eric Heiden, Karol Hausman, Guarav Sukhatme and Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Safe Trajectory Generation using Confidence-rich Maps</b>,&rdquo; in <i>Southern California Robotics Symposium (SCR)</i>, Los Angeles, CA, April 2017.
+                            Eric Heiden, Karol Hausman, Guarav Sukhatme and Ali-akbar Agha-mohammadi, &ldquo;<b>Safe Trajectory Generation using Confidence-rich Maps</b>,&rdquo; in <i>Southern California Robotics Symposium (SCR)</i>, Los Angeles, CA, April 2017.
 
                             <!--
 -->
@@ -1278,9 +1292,7 @@
                         <li class="W">
 
 
-                            Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>SMAP: Simultaneous Mapping and Planning on Occupancy Grids</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS), Workshop on Vision-based High Speed Autonomous Navigation of UAVs</i>, Daejeon, South Korea, October 2016.
+                            Ali-akbar Agha-mohammadi, &ldquo;<b>SMAP: Simultaneous Mapping and Planning on Occupancy Grids</b>,&rdquo; in <i>International Conference on Intelligent Robots and Systems (IROS), Workshop on Vision-based High Speed Autonomous Navigation of UAVs</i>, Daejeon, South Korea, October 2016.
 
                             <!--
 -->
@@ -1317,9 +1329,7 @@
                         <li class="W">
 
 
-                            Christopher Amato, George Konidaris, Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Jonathan P. How and Leslie P. Kaelbling, &ldquo;
-
-                            <b>Probabilistic Planning for Decentralized Multi-Robot Systems</b>,&rdquo; in <i>Sequential Decision Making for Intelligent Agents, AAAI fall symposium</i>, Arlington, VA, November 2015.
+                            Christopher Amato, George Konidaris, Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Jonathan P. How and Leslie P. Kaelbling, &ldquo;<b>Probabilistic Planning for Decentralized Multi-Robot Systems</b>,&rdquo; in <i>Sequential Decision Making for Intelligent Agents, AAAI fall symposium</i>, Arlington, VA, November 2015.
 
                             <!--
 -->
@@ -1356,9 +1366,7 @@
 
                         <li class="W">
 
-                            Ali-akbar Agha-mohammadi, Shayegan Omidshafiei, Christopher Amato and Jonathan P. How, &ldquo;
-
-                            <b>Graph-based Planning to Solve Multi-agent POMDPs</b>,&rdquo; in <i>Robotics: Science and Systems, Workshop on Distributed Control and Estimation for Robotic Vehicle Networks</i>, Berkeley, CA, July 2014.
+                            Ali-akbar Agha-mohammadi, Shayegan Omidshafiei, Christopher Amato and Jonathan P. How, &ldquo;<b>Graph-based Planning to Solve Multi-agent POMDPs</b>,&rdquo; in <i>Robotics: Science and Systems, Workshop on Distributed Control and Estimation for Robotic Vehicle Networks</i>, Berkeley, CA, July 2014.
 
                             <!--
 -->
@@ -1395,9 +1403,7 @@
                         <li class="W">
 
 
-                            Ali-akbar Agha-mohammadi, Saurav Agarwal, Suman Chakravorty and Nancy M. Amato, &ldquo;
-
-                            <b>Dynamic Closed-loop Replanning in Belief Space: Toward Handling Dynamically Changing Environments</b>,&rdquo; in <i>Robotics: Science and Systems, Workshop on Information-based Grasp and Manipulation Planning</i>, Berkeley, CA, July 2014.
+                            Ali-akbar Agha-mohammadi, Saurav Agarwal, Suman Chakravorty and Nancy M. Amato, &ldquo;<b>Dynamic Closed-loop Replanning in Belief Space: Toward Handling Dynamically Changing Environments</b>,&rdquo; in <i>Robotics: Science and Systems, Workshop on Information-based Grasp and Manipulation Planning</i>, Berkeley, CA, July 2014.
 
                             <!--
 -->
@@ -1434,9 +1440,7 @@
 
                         <li class="W">
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Online Replanning in Belief Space for Dynamical Systems: Towards Handling Discrete Changes of Goal Location</b>,&rdquo; in <i>IEEE International Conference On Robotics and Automation (ICRA), Workshop on Combining Task and Motion Planning</i>, Karlsruhe, Germany, May 2013.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Online Replanning in Belief Space for Dynamical Systems: Towards Handling Discrete Changes of Goal Location</b>,&rdquo; in <i>IEEE International Conference On Robotics and Automation (ICRA), Workshop on Combining Task and Motion Planning</i>, Karlsruhe, Germany, May 2013.
 
                             <!--
 -->
@@ -1473,9 +1477,7 @@
                         <li class="W">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Medical Needle Steering under Motion and Sensor Noise using Feedback-based Information Roadmaps</b>,&rdquo; in <i>IEEE International Conference On Robotics and Automation (ICRA), Workshop on Medical Needle Steering</i>, Saint Paul, Minnesota, May 2012.
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Medical Needle Steering under Motion and Sensor Noise using Feedback-based Information Roadmaps</b>,&rdquo; in <i>IEEE International Conference On Robotics and Automation (ICRA), Workshop on Medical Needle Steering</i>, Saint Paul, Minnesota, May 2012.
 
                             <!--
 -->
@@ -1512,9 +1514,7 @@
                         <li class="W">
 
 
-                            Arash Kalantari, Ehsan Mihankhah and Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Resquake, A Tracked Mobile Rescue Robot</b>,&rdquo; in <i>Rescue Robotics Camp, IEEE International Workshop on Safety Security and Rescue Robotics (SSRR)</i>, Rome, Italy, September 2007.
+                            Arash Kalantari, Ehsan Mihankhah and Ali-akbar Agha-mohammadi, &ldquo;<b>Resquake, A Tracked Mobile Rescue Robot</b>,&rdquo; in <i>Rescue Robotics Camp, IEEE International Workshop on Safety Security and Rescue Robotics (SSRR)</i>, Rome, Italy, September 2007.
 
                             <!--
 -->
@@ -1562,9 +1562,7 @@
                         <li class="P">
 
 
-                            Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Rollocopter: Novel Hybrid Aerial-Ground Vehicle for Failure-Resilient, Energy-Efficient, and Agile Mobility</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, &ldquo;<b>Rollocopter: Novel Hybrid Aerial-Ground Vehicle for Failure-Resilient, Energy-Efficient, and Agile Mobility</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1597,9 +1595,7 @@
                         <li class="P">
 
 
-                            Zhaoyang Lv and Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Holistic Planning with Multiple Intentions for Self-driving Cars</b>,&rdquo;
+                            Zhaoyang Lv and Ali-akbar Agha-mohammadi, &ldquo;<b>Holistic Planning with Multiple Intentions for Self-driving Cars</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1632,9 +1628,7 @@
                         <li class="P">
 
 
-                            Zhaoyang Lv, Ali-akbar Agha-mohammadi and Amirhossein Tamjidi, &ldquo;
-
-                            <b>Motion Planning and Intention Prediction for Autonomous Driving in Highway Scenarios via Factor Graph Representation</b>,&rdquo;
+                            Zhaoyang Lv, Ali-akbar Agha-mohammadi and Amirhossein Tamjidi, &ldquo;<b>Motion Planning and Intention Prediction for Autonomous Driving in Highway Scenarios via Factor Graph Representation</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1667,9 +1661,7 @@
 
                         <li class="P">
 
-                            Ali-akbar Agha-mohammadi, Kiran Somasundaram and Saurav Agarwal, &ldquo;
-
-                            <b>Measurement Fusion for 3D grid Mapping using cause-dependent inverse cause models</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Kiran Somasundaram and Saurav Agarwal, &ldquo;<b>Measurement Fusion for 3D grid Mapping using cause-dependent inverse cause models</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1702,9 +1694,7 @@
                         <li class="P">
 
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Vision-based Autonomous Navigation System for Quadcopters</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Vision-based Autonomous Navigation System for Quadcopters</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1737,9 +1727,7 @@
 
                         <li class="P">
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>RRF: Rapidly Exploring Randomized Feedback Trees for Robot Motion Planning</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>RRF: Rapidly Exploring Randomized Feedback Trees for Robot Motion Planning</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1772,9 +1760,7 @@
                         <li class="P">
 
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Certainty-aware 3D Grid Map and Bayesian Update based on Stereo Vision</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Certainty-aware 3D Grid Map and Bayesian Update based on Stereo Vision</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1807,9 +1793,7 @@
 
                         <li class="P">
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Most Likely Map Computation based on Raw Stereo Vision Measurements</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Most Likely Map Computation based on Raw Stereo Vision Measurements</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1842,9 +1826,7 @@
                         <li class="P">
 
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Stochastic Map-aware Stereo-vision Sensor Model for Robot Navigation in Unknown Environments</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Stochastic Map-aware Stereo-vision Sensor Model for Robot Navigation in Unknown Environments</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1877,9 +1859,7 @@
 
                         <li class="P">
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Robot Motion Planning and Exploration using Certainty-aware Stochastic Grid Maps</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Robot Motion Planning and Exploration using Certainty-aware Stochastic Grid Maps</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1912,9 +1892,7 @@
                         <li class="P">
 
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Object-focused Active 3D Reconstruction using Monocular Camera: Application to Precision Robotic Grasping</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Object-focused Active 3D Reconstruction using Monocular Camera: Application to Precision Robotic Grasping</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1947,9 +1925,7 @@
 
                         <li class="P">
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Active Camera Movement Determination for Object Position and Extent in Three-Dimensional Space</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Active Camera Movement Determination for Object Position and Extent in Three-Dimensional Space</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -1982,9 +1958,7 @@
 
                         <li class="P">
 
-                            Ali-akbar Agha-mohammadi et al., &ldquo;
-
-                            <b>Parallel Robot Motion Planning Under Uncertainty</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi et al., &ldquo;<b>Parallel Robot Motion Planning Under Uncertainty</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -2017,9 +1991,7 @@
 
                         <li class="P">
 
-                            Jonathan P. How, John Vian, Shayegan Omidshafiei and Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Cyber-Physical Systems Prototyping Environment</b>,&rdquo;
+                            Jonathan P. How, John Vian, Shayegan Omidshafiei and Ali-akbar Agha-mohammadi, &ldquo;<b>Cyber-Physical Systems Prototyping Environment</b>,&rdquo;
 
                             <i>Submitted to The United States Patent and Trademark Office</i> .
                             <br />
@@ -2061,11 +2033,9 @@
                     <p>
 
 
-                        <li class="C">
+                        <li class="N">
 
-                            Amirhossein Tamjidi, Ali-akbar Agha-mohammadi and Hamid D. Taghirad, &ldquo;
-
-                            <b>Augmenting Vision and LRF Information: Towards Encoder-free SLAM in Unstructured Environments</b>,&rdquo; in <i>Machine Vision and Image Processing Conference</i>, Tabriz, Iran, 2008.
+                            Amirhossein Tamjidi, Ali-akbar Agha-mohammadi and Hamid D. Taghirad, &ldquo;<b>Augmenting Vision and LRF Information: Towards Encoder-free SLAM in Unstructured Environments</b>,&rdquo; in <i>Machine Vision and Image Processing Conference</i>, Tabriz, Iran, 2008.
 
                             <!--
 -->
@@ -2099,12 +2069,10 @@
                     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
                     <p>
 
-                        <li class="C">
+                        <li class="N">
 
 
-                            Ali-akbar Agha-mohammadi, Majid Nili Ahmadabadi and Taher S. Mirzahasanloo, &ldquo;
-
-                            <b>Behavior Learning in Behavior-Based Architectures Using Reinforcement Learning</b>,&rdquo; in <i>12th International CSI Computer Conference (CSICC)</i>, Tehran, Iran, pp. 171-174, 2007.
+                            Ali-akbar Agha-mohammadi, Majid Nili Ahmadabadi and Taher S. Mirzahasanloo, &ldquo;<b>Behavior Learning in Behavior-Based Architectures Using Reinforcement Learning</b>,&rdquo; in <i>12th International CSI Computer Conference (CSICC)</i>, Tehran, Iran, pp. 171-174, 2007.
 
                             <!--
 -->
@@ -2139,12 +2107,10 @@
                     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
                     <p>
 
-                        <li class="C">
+                        <li class="N">
 
 
-                            Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Mobile Robot Localization Using Single Camera</b>,&rdquo; in <i>10th Iranian Student Conference on Electrical Engineering, (ISCEE)</i>, Esfahan, Iran, 2007.
+                            Ali-akbar Agha-mohammadi, &ldquo;<b>Mobile Robot Localization Using Single Camera</b>,&rdquo; in <i>10th Iranian Student Conference on Electrical Engineering, (ISCEE)</i>, Esfahan, Iran, 2007.
 
                             <!--
 -->
@@ -2179,11 +2145,9 @@
                     <p>
 
 
-                        <li class="C">
+                        <li class="N">
 
-                            Ali-akbar Agha-mohammadi and Taher S. Mirzahasanloo, &ldquo;
-
-                            <b>Path Planning Using Hopfield Neural Network</b>,&rdquo; in <i>10th Iranian Student Conference on Electrical Engineering, (ISCEE)</i>, Esfahan, Iran, 2007.
+                            Ali-akbar Agha-mohammadi and Taher S. Mirzahasanloo, &ldquo;<b>Path Planning Using Hopfield Neural Network</b>,&rdquo; in <i>10th Iranian Student Conference on Electrical Engineering, (ISCEE)</i>, Esfahan, Iran, 2007.
 
                             <!--
 -->
@@ -2217,12 +2181,10 @@
                     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
                     <p>
 
-                        <li class="C">
+                        <li class="N">
 
 
-                            Ali-akbar Agha-mohammadi and Amirhossein Tamjidi, &ldquo;
-
-                            <b>An Introduction to Modified Methods in Ant Colony Systems Optimization and Proposing a New Local Optimizer</b>,&rdquo; in <i>10th Intelligent Systems Conference</i>, Esfahan, Iran, pp. 460-463, 2005.
+                            Ali-akbar Agha-mohammadi and Amirhossein Tamjidi, &ldquo;<b>An Introduction to Modified Methods in Ant Colony Systems Optimization and Proposing a New Local Optimizer</b>,&rdquo; in <i>10th Intelligent Systems Conference</i>, Esfahan, Iran, pp. 460-463, 2005.
 
                             <!--
 -->
@@ -2271,9 +2233,7 @@
 
                         <li class="T">
 
-                            Ali-akbar Agha-mohammadi, Nazim Kemal Ure, Jonathan P. How and John Vian, &ldquo;
-
-                            <b>Health-aware Stochastic Planning for Persistent Package Delivery Missions using Quadrotors</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Nazim Kemal Ure, Jonathan P. How and John Vian, &ldquo;<b>Health-aware Stochastic Planning for Persistent Package Delivery Missions using Quadrotors</b>,&rdquo;
 
                             <i>Technical Report, Aerospace Controls Laboratory, Department of Aero/Astro, MIT</i> December 2013.
                             <br />
@@ -2307,9 +2267,7 @@
                         <li class="T">
 
 
-                            Ali-akbar Agha-mohammadi, Saurav Agarwal and Suman Chakravorty, &ldquo;
-
-                            <b>Periodic-node Graph-based Framework for Stochastic Control of Small Aerial Vehicles</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Saurav Agarwal and Suman Chakravorty, &ldquo;<b>Periodic-node Graph-based Framework for Stochastic Control of Small Aerial Vehicles</b>,&rdquo;
 
                             <i>Technical Report, TAMU-EDPL-TR-2014-001, Department of Aerospace Engineering, Texas A&amp;M University</i> 2014.
                             <br />
@@ -2343,9 +2301,7 @@
                         <li class="T">
 
 
-                            Ali-akbar Agha-mohammadi, Saurav Agarwal, Aditya Mahadevan, Suman Chakravorty, Daniel Tomkins, Jory Denny and Nancy Amato, &ldquo;
-
-                            <b>Dynamic Real-time Replanning in Belief Space: An Experimental Study on Physical Mobile Robots</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Saurav Agarwal, Aditya Mahadevan, Suman Chakravorty, Daniel Tomkins, Jory Denny and Nancy Amato, &ldquo;<b>Dynamic Real-time Replanning in Belief Space: An Experimental Study on Physical Mobile Robots</b>,&rdquo;
 
                             <i>Technical Report, TR13-007, Department of Computer Science, Texas A&amp;M University</i> July 2013.
                             <br />
@@ -2379,9 +2335,7 @@
                         <li class="T">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Sampling-based Nonholonomic Motion Planning in Belief Space via Dynamic Feedback Linearization-based FIRM</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Sampling-based Nonholonomic Motion Planning in Belief Space via Dynamic Feedback Linearization-based FIRM</b>,&rdquo;
 
                             <i>Technical Report: TR12-004, Parasol Lab., CSE Dept., Texas A&amp;M University</i> 2012.
                             <br />
@@ -2415,9 +2369,7 @@
                         <li class="T">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Periodic-Feedback Motion planning in belief space for non-holonomic and/or Non-stoppable robots</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Periodic-Feedback Motion planning in belief space for non-holonomic and/or Non-stoppable robots</b>,&rdquo;
 
                             <i>Technical Report: TR12-003, Parasol Lab., CSE Dept., Texas A&amp;M University</i> 2012.
                             <br />
@@ -2451,9 +2403,7 @@
                         <li class="T">
 
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Motion planning in belief space using sampling-based Feedback planners</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Motion planning in belief space using sampling-based Feedback planners</b>,&rdquo;
 
                             <i>Technical Report: TR11-007, Parasol Lab., CSE Dept., Texas A&amp;M University</i> 2011.
                             <br />
@@ -2487,9 +2437,7 @@
 
                         <li class="T">
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>Probabilistic Completeness of the Belief Space Motion Planners</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>Probabilistic Completeness of the Belief Space Motion Planners</b>,&rdquo;
 
                             <i>Technical Report: TR11-006, Parasol Lab., CSE Dept., Texas A&amp;M University</i> 2011.
                             <br />
@@ -2523,9 +2471,7 @@
 
                         <li class="T">
 
-                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;
-
-                            <b>FIRM: Feedback controller-based Information-state RoadMap, A Framework for Motion Planning Under Uncertainty</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, Suman Chakravorty and Nancy Amato, &ldquo;<b>FIRM: Feedback controller-based Information-state RoadMap, A Framework for Motion Planning Under Uncertainty</b>,&rdquo;
 
                             <i>Technical Report: TR11-001, Parasol Lab., CSE Dept., Texas A&amp;M University</i> 2011.
                             <br />
@@ -2570,9 +2516,7 @@
                         <li class="D">
 
 
-                            Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Sampling-based State Estimation and Stochastic Control for Robot Motion Planning under Motion Uncertainty and Noisy Sensor Measurements</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, &ldquo;<b>Sampling-based State Estimation and Stochastic Control for Robot Motion Planning under Motion Uncertainty and Noisy Sensor Measurements</b>,&rdquo;
 
                             <i>PhD Dissertation, Department of Computer Science and Engineering, Texas A&amp;M University,</i> October 2013.
                             <br />
@@ -2606,9 +2550,7 @@
 
                         <li class="D">
 
-                            Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Design and Implementation of Multi-sensor Fusion methods for Solving Simultaneous Localization And Mapping (SLAM) Problem</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, &ldquo;<b>Design and Implementation of Multi-sensor Fusion methods for Solving Simultaneous Localization And Mapping (SLAM) Problem</b>,&rdquo;
 
                             <i>M.Sc. Thesis, Department of Electrical and Computer Engineering, Khaje Nasir Toosi University of Technology,</i> July 2008.
                             <br />
@@ -2642,9 +2584,7 @@
                         <li class="D">
 
 
-                            Ali-akbar Agha-mohammadi, &ldquo;
-
-                            <b>Robosoccer: Small-size Soccer Robots for Robocup Competitions</b>,&rdquo;
+                            Ali-akbar Agha-mohammadi, &ldquo;<b>Robosoccer: Small-size Soccer Robots for Robocup Competitions</b>,&rdquo;
 
                             <i>B.Sc. Thesis, Department of Electrical and Computer Engineering, Tabriz University,</i> June 2005.
                             <br />
